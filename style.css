@@ -1,0 +1,135 @@
+body {
+
+    /* background: #202028; */
+    background-image: url('./5fb16cffaefd2.jpg');
+
+}
+
+canvas {
+  
+  border: solid .1em #000;
+  height: 75vh;
+  width: 22vw; 
+
+}
+
+#canvasPos{
+
+  width: 22vw;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+}
+
+#score{
+
+  border: 2px solid black;
+  width: 60%;
+  color: black;
+  margin-top: 3px;
+  padding-left: 5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  font-family: sans-serif;
+
+}
+
+@font-face{
+
+  font-family: modernTetris;
+  src: url(tetrisblocks-p99g-webfont.woff);
+
+}
+
+#gameCube{
+
+  margin: auto;
+  margin-top: 2%;
+  width: 50%;
+  height: 85vh;
+  background: #FDEE21;
+  display: flex;
+
+}
+
+
+#leftBox{
+
+  flex: 6;
+
+}
+
+#rightBox{
+
+  flex: 6;
+
+}
+
+#tetrisT{
+
+  font-family: modernTetris;
+  font-size: 2.5rem;
+
+  margin-top: 10%;
+  margin-bottom: 5%;
+
+}
+
+#scoreTab{
+
+  margin-top: 40px;
+  margin-left: 10px;
+  
+  font-size: 1.5rem;
+
+}
+
+#pauseMessage{
+
+  font-size: 1.2rem;
+  margin-top: 10%;
+  animation: blinkText 1.5s linear infinite;
+
+}
+
+#controlsDesc{
+
+  position: absolute;
+  bottom: 15.5%;
+
+  font-size: 1.1rem;
+  border: 1px solid black;
+
+  padding: 0 10px;
+
+}
+
+#controls{
+
+  font-size: 1.3rem;
+
+}
+
+@keyframes blinkText{
+
+  50%{
+
+    opacity: 0%;
+
+  }
+
+}
+
+
+#gameOverMessage{
+
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  
+  margin-top: 10px;
+
+}

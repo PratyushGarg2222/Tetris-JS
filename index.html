@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>Tetris</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="gameCube">
+
+        <div id="leftBox">
+            <div id="canvasPos">
+                <canvas id="tetris" width="240" height="400"></canvas>
+            </div>
+        </div>
+
+        <div id="rightBox">
+
+            <div id="tetrisT">T</div>
+            <div id="scoreTab">
+                Score
+                <div id="score"></div>
+            </div>
+
+            <div id="pauseMessage">
+                <!-- Paused! Press Spacebar to start the game -->
+            </div>
+
+            <div id="gameOverMessage">
+                <!-- GAME OVER! -->
+            </div>
+
+            <div id = "controlsDesc">
+
+                <p><b id = "controls">Controls</b></p>
+                <p> &#8592;  :  Move Block Left</p>
+                <p> &#8594; : Move Block right</p>
+                <p>Q : Rotate Block left</p>
+                <p>W : Rotate Block right</p>
+                <p>SpaceBar : Pause/Play the game</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="tetris.js"></script>
+
+</body>
+</html>
